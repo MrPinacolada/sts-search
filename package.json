@@ -1,19 +1,36 @@
 {
   "name": "sts-search",
-  "version": "0.0.0",
-  "private": true,
+  "private": false,
+  "version": "0.0.1",
   "type": "module",
+  "keywords": [],
+  "files": [
+    "dist",
+    "src"
+  ],
+  "main": "./dist/sts-serach.umd.cjs",
+  "module": "./dist/sts-serach.js",
+  "exports": {
+    ".": {
+      "import": "./dist/sts-serach.js",
+      "require": "./dist/sts-serach.umd.cjs"
+    },
+    "./dist/style.css": {
+      "import": "./dist/style.css",
+      "require": "./dist/style.css"
+    }
+  },
+  "types": "./dist/index.d.ts",
   "scripts": {
     "dev": "vite",
-    "build": "run-p type-check \"build-only {@}\" --",
-    "preview": "vite preview",
-    "build-only": "vite build",
-    "type-check": "vue-tsc --build --force"
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "dependencies": {
     "sass-embedded": "^1.78.0",
     "sass-loader": "^16.0.1",
     "scss": "^0.2.4",
+    "vite-plugin-dts": "^4.1.0",
     "vue": "^3.4.29"
   },
   "devDependencies": {

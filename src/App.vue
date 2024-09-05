@@ -10,7 +10,7 @@
         @input="applyMask"
       />
       <span class="sugg-absolute">
-        <img src="../public/img/sts.6d57bfd.webp" alt="" />
+        <img src="./assets/img/sts.6d57bfd.webp" alt="logo" />
       </span>
     </div>
     <div v-if="userStsMasked.length === 10" class="email-input">
