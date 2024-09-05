@@ -18,7 +18,7 @@ export default defineConfig({
     reportCompressedSize: true,
     lib: {
       entry: path.resolve(__dirname, "src/index.ts"),
-      name: "sts_search",
+      name: "sts__search",
     },
     rollupOptions: {
       external: ["vue"],

@@ -1,5 +1,5 @@
 {
-  "name": "sts_search",
+  "name": "sts__search",
   "private": false,
   "version": "0.0.5",
   "type": "module",
@@ -8,12 +8,12 @@
     "dist",
     "src"
   ],
-  "main": "./dist/sts_search.umd.cjs",
-  "module": "./dist/sts_search.js",
+  "main": "./dist/sts__search.umd.cjs",
+  "module": "./dist/sts__search.js",
   "exports": {
     ".": {
-      "import": "./dist/sts_search.js",
-      "require": "./dist/sts_search.umd.cjs"
+      "import": "./dist/sts__search.js",
+      "require": "./dist/sts__search.umd.cjs"
     },
     "./dist/style.css": {
       "import": "./dist/style.css",
