@@ -1,19 +1,19 @@
 {
-  "name": "sts-search",
+  "name": "sts_search",
   "private": false,
-  "version": "0.0.1",
+  "version": "0.0.2",
   "type": "module",
   "keywords": [],
   "files": [
     "dist",
     "src"
   ],
-  "main": "./dist/sts-serach.umd.cjs",
-  "module": "./dist/sts-serach.js",
+  "main": "./dist/sts_search.umd.cjs",
+  "module": "./dist/sts_search.js",
   "exports": {
     ".": {
-      "import": "./dist/sts-serach.js",
-      "require": "./dist/sts-serach.umd.cjs"
+      "import": "./dist/sts_search.js",
+      "require": "./dist/sts_search.umd.cjs"
     },
     "./dist/style.css": {
       "import": "./dist/style.css",
