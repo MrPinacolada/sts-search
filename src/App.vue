@@ -35,7 +35,7 @@
 
 <script setup lang="ts">
 import { ref, computed } from "vue";
-import sts_search from "sts_search";
+import sts_search from "sts__search";
 
 const userSts = ref<string>("");
 const userStsMasked = ref<string>("");
