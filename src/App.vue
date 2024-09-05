@@ -35,7 +35,7 @@
 
 <script setup lang="ts">
 import { ref, computed } from "vue";
-import "./styles/index.scss";
+import './assets/styles.scss'
 
 const userSts = ref<string>("");
 const userStsMasked = ref<string>("");
