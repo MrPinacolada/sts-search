@@ -1,3 +1,3 @@
-import sts_search from "./App.vue";
+import sts_search from "./sts_search.vue";
 
 export default sts_search ;
