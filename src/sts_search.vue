@@ -104,7 +104,7 @@ const showBackendError = (data: Response) => {
 };
 </script>
 
-<style scoped lang="scss">
+<style scoped>
 .sts-search {
   width: 100%;
   max-width: 90dvw;
@@ -117,56 +117,57 @@ const showBackendError = (data: Response) => {
   padding: 24px;
   background-color: #fff;
   row-gap: 80px;
-  input {
-    max-height: 54px;
-    min-width: 314px;
-    margin: 0;
-    background-clip: padding-box;
-    border: 1px solid #c1d1df;
-    border-radius: 0.25rem;
-    color: #495057;
-    display: block;
-    font-size: 0.875rem;
-    font-weight: 400;
-    line-height: 1.5;
-    padding: 0.75rem 1rem;
-    :focus {
-      background: rgba(0, 97, 217, 0.1) !important;
-      color: #010b23;
-      border: none;
-    }
-  }
-  .sts-input {
-    position: relative;
-    .sugg-absolute {
-      position: absolute;
-      bottom: -77px;
-      left: 50%;
-      transform: translateX(-50%);
-      z-index: 999;
-      img {
-        max-width: 280px;
-        max-height: 73px;
-      }
-    }
-  }
+}
 
-  .submit-butt {
-    min-width: 285px;
-    height: 50px;
-    border-radius: 8px;
-    outline: none;
-    transition: background-color 0.4s ease;
-    margin: 0;
-    padding: 0;
-    background-color: #e5e5eb;
-    border: none;
-    cursor: pointer;
-    flex-grow: 1;
-    &-active {
-      background-color: #0061d9;
-    }
-  }
+input {
+  max-height: 54px;
+  min-width: 314px;
+  margin: 0;
+  background-clip: padding-box;
+  border: 1px solid #c1d1df;
+  border-radius: 0.25rem;
+  color: #495057;
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.5;
+  padding: 0.75rem 1rem;
+}
+input :focus {
+  background: rgba(0, 97, 217, 0.1) !important;
+  color: #010b23;
+  border: none;
+}
+
+.sts-input {
+  position: relative;
+}
+.sugg-absolute {
+  position: absolute;
+  bottom: -77px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 999;
+}
+img {
+  max-width: 280px;
+  max-height: 73px;
+}
+.submit-butt {
+  min-width: 285px;
+  height: 50px;
+  border-radius: 8px;
+  outline: none;
+  transition: background-color 0.4s ease;
+  margin: 0;
+  padding: 0;
+  background-color: #e5e5eb;
+  border: none;
+  cursor: pointer;
+  flex-grow: 1;
+}
+submit-butt-active {
+  background-color: #0061d9;
 }
 
 .backend-res {
